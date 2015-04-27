@@ -1,0 +1,448 @@
+<div class="row">
+	<div class="col-md-9">
+		<h4>Oferta do Produto</h4>
+		<hr/>
+		<form class="form-horizontal">
+			<div class="form-group">
+			<label for="selectGrupo" class="col-sm-3 control-label">Grupo Comercial</label>
+			<div class="col-sm-9">
+				<select disabled class="form-control" id="selectGrupo" placeholder="Seleção do Ramo">
+					<option>Lista de Valores</option>
+				</select>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="selectRamo" class="col-sm-3 control-label">Ramo</label>
+			<div class="col-sm-9">
+				<select disabled class="form-control" id="selectRamo" placeholder="Seleção do Ramo">
+					<option>Lista de Valores</option>
+				</select>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="selectModalidade" class="col-sm-3 control-label">Modalidade</label>
+			<div class="col-sm-9">
+				<select disabled class="form-control" id="selectModalidade" placeholder="Seleção da Modalidade">
+					<option>Lista de Valores</option>
+				</select>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputDescricao" class="col-sm-3 control-label">Descrição resumida do Produto Cormercial</label>
+			<div class="col-sm-9">
+				<input disabled type="text" class="form-control" id="inputDescricao" placeholder="Texto Livre">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputVersao" class="col-sm-3 control-label">Versão do Produto Comercial</label>
+			<div class="col-sm-9">
+				<input disabled type="text" class="form-control" id="inputVersao" placeholder="">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="selectOferta" class="col-sm-3 control-label">Oferta</label>
+			<div class="col-sm-9">
+				<select class="form-control" id="selectOferta" placeholder="Seleção da Modalidade">
+					<option>Habitual - versão 1 - "Concluido"</option>
+                    <option>Premium - versão 2 - "Em Desenvolvimento"</option>
+				</select>
+				<button class="btn btn-default">Criar Oferta</button>
+				<button class="btn btn-default">Remover Oferta</button>
+				<button class="btn btn-default">Versionar Oferta</button>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputDescricao" class="col-sm-3 control-label">Descrição resumida</label>
+			<div class="col-sm-9">
+				<input type="text" class="form-control" id="inputDescricao" placeholder="Texto Livre">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputDescricaoLonga" class="col-sm-3 control-label">Descrição completa</label>
+			<div class="col-sm-9">
+				<input type="text" class="form-control" id="inputDescricaoLonga" placeholder="Texto Livre">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputDescricaoLonga" class="col-sm-3 control-label">Status</label>
+			<div class="col-sm-9">
+				<input disabled type="text" class="form-control" id="inputDescricaoLonga" placeholder="">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputDescricaoLonga" class="col-sm-3 control-label">Numero da Versão</label>
+			<div class="col-sm-9">
+				<input disabled type="text" class="form-control" id="inputDescricaoLonga" placeholder="">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label class="col-sm-3 control-label">Vigência</label>
+			<div class="col-sm-9 center-block">
+				<label for="inputInicio" class="col-sm-3 control-label">Início</label>
+				<div class="col-sm-9">
+					<input type="date" class="form-control" id="inputRestricao" >
+				</div>
+				<label for="inputFim" class="col-sm-3 control-label">Fim</label>
+				<div class="col-sm-9">
+					<input type="date" class="form-control" id="inputRestricao" >
+				</div>
+			</div>
+		  </div>
+		  <div class="row">
+			</br></br>
+		  </div>
+		  <h4>Canal</h4>
+		  <hr/>
+		  <table class="table">
+			<thead>
+			  <tr>
+				<th>Canal</th>
+				<th>Tipo Seguro</th>
+				<th>Calculo</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td>
+					<select class="form-control" >
+						<option>Canal do Cliente</option>
+						<option>Canal do Corretor</option>
+					</select>
+				</td>
+				<td>
+					<select class="form-control" >
+						<option>Orçamento</option>
+						<option>Proposta</option>
+					</select>
+				</td>
+				<td>
+					<select multiple class="form-control" >
+						<option>Anual</option>
+						<option>Plurianual</option>
+					</select>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+					<select class="form-control" >
+						<option>Canal do Cliente</option>
+					</select>
+				</td>
+				<td>
+					<select class="form-control" >
+						<option>Orçamento</option>
+						<option>Proposta</option>
+					</select>
+				</td>
+				<td>
+					<select multiple class="form-control" >
+						<option>Anual</option>
+						<option>Plurianual</option>
+					</select>
+				</td>
+			  </tr>
+			  <tr>
+				<td>
+					<button type="button" class="btn btn-default btn-sm">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Novo
+					</button>
+				</td>
+				<td></td>
+				<td></td>
+			  </tr>
+			</tbody>
+		  </table>
+		  <div class="form-group">
+			<label for="inlineApoliceColetiva" class="col-sm-3 control-label">Permite Apolice Coletiva?</label>
+			<div class="col-sm-9">
+				<label class="radio-inline">
+				  <input disabled type="radio" name="inlineApoliceColetiva" id="inlineApoliceColetiva1" value="S"> Sim
+				</label>
+				<label class="radio-inline">
+				  <input disabled checked type="radio" name="inlineApoliceColetiva" id="inlineApoliceColetiva2" value="N"> Não
+				</label>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="radioObjetoSeg" class="col-sm-3 control-label">Permite mais de um objeto de risco?</label>
+			<div class="col-sm-9">
+				<label class="radio-inline">
+				  <input type="radio" name="radioObjetoSeg" id="radioObjetoSeg1" value="S"> Sim
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="radioObjetoSeg" id="radioObjetoSeg2" value="N"> Não
+				</label>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inlineMultiPagadores" class="col-sm-3 control-label">Mais de um Responsável pelo Pagamento?</label>
+			<div class="col-sm-9">
+				<label class="radio-inline">
+				  <input type="radio" name="inlineMultiPagadores" id="inlineMultiPagadores1" value="S"> Sim
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineMultiPagadores" id="inlineMultiPagadores2" value="N"> Não
+				</label>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="radioPermCosegurado" class="col-sm-3 control-label">Permite co-segurado?</label>
+			<div class="col-sm-9">
+				<label class="radio-inline">
+				  <input type="radio" name="radioPermCosegurado" id="radioPermCoSeguro1" value="S"> Sim
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="radioPermCosegurado" id="radioPermCoSeguro2" value="N"> Não
+				</label>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputValidadeOrcNovo" class="col-sm-3 control-label">Validade do Orçamento Novo</label>
+			<div class="col-sm-9">
+				<input type="text" class="form-control" id="inputValidadeOrcNovo" placeholder="Texto Livre">
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="selectTipoRenovacao" class="col-sm-3 control-label">Tipo Renovação</label>
+			<div class="col-sm-9">
+				<select class="form-control" id="selectTipoRenovacao" >
+					<option>Lista de Valores</option>
+				</select>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inputValidadeOrcRenov" class="col-sm-3 control-label">Validade do Orçamento Renovação</label>
+			<div class="col-sm-9">
+				<input type="text" class="form-control" id="inputValidadeOrcRenov" placeholder="Texto Livre">
+			</div>
+		  </div>
+    <div class="row"><h4>&nbsp;</h4></div>
+    <h4>Descontos e Agravos <small><a href="../cadastrogerais/descontosagravos.html"><span class="glyphicon glyphicon-new-window" /></a></small></h4>
+		  <hr/>
+		  <table class="table">
+			<thead>
+			  <tr>
+				<th></th>
+				<th>Descrição</th>
+				<th>Tipo</th>
+				<th>Limite Minimo</th>
+				<th>Limite Máximo</th>
+				<th>Cálculo</th>
+				<th>Desprezado Renovação</th>
+				<th>Imprimir?</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+				<td>
+					<select class="form-control" >
+						<option>Comercial</option>
+					</select>
+				</td>
+				<td>Desconto</td>
+				<td>5%</td>
+				<td>20%</td>
+				<td>Comercial</td>
+				<td><input type="checkbox"></td>
+				<td><input type="checkbox"></td>
+			  </tr>
+			  <tr>
+				<td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+				<td>
+					<select class="form-control" >
+						<option>Agravo Região</option>
+					</select>
+				</td>
+				<td>Agravo</td>
+				<td>5%</td>
+				<td>20%</td>
+				<td>Tarifário</td>
+				<td><input type="checkbox"></td>
+				<td><input type="checkbox"></td>
+			  </tr>
+			  <tr>
+				<td colspan="2">
+					<button type="button" class="btn btn-default btn-sm">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Novo
+					</button>
+				</td>
+				<td></td><td></td><td></td><td></td><td></td><td></td>
+			  </tr>
+			</tbody>
+		  </table>
+        <div class="row"><h4>&nbsp;</h4></div>
+		  <h4>Benefícios <small><a href="../cadastrogerais/beneficios.html"><span class="glyphicon glyphicon-new-window" /></a></small></h4>
+		  <hr/>
+		  <table class="table">
+			<thead>
+			  <tr>
+				<th></th>
+				<th>Benefício</th>
+				<th>Limite de uso</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+				<td>
+					<select class="form-control" >
+						<option>Teatro</option>
+					</select>
+				</td>
+				<td><input type="text"></td>
+			  </tr>
+			  <tr>
+				<td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+				<td>
+					<select class="form-control" >
+						<option>Estacionamento</option>
+					</select>
+				</td>
+				<td><input type="text"></td>
+			  </tr>
+			  <tr>
+				<td colspan="2">
+					<button type="button" class="btn btn-default btn-sm">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Novo
+					</button>
+				</td>
+				<td></td>
+			  </tr>
+			</tbody>
+		  </table>
+            <div class="row"><h4>&nbsp;</h4></div>
+		  <h4>Formulários <small><a href="../cadastrogerais/tipoformulario.html"><span class="glyphicon glyphicon-new-window" /></a></small></h4>
+		  <hr/>
+		  <table class="table">
+			<thead>
+			  <tr>
+				<th></th>
+				<th>Descrição</th>
+				<th>Funcionalidade</th>
+				<th>Código</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+				<td>
+					<select class="form-control" >
+						<option>Orçamento</option>
+					</select>
+				</td>
+				<td>O</td>
+				<td><input type="text"></td>
+			  </tr>
+			  <tr>
+				<td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+				<td>
+					<select class="form-control" >
+						<option>Emissão</option>
+					</select>
+				</td>
+				<td>E</td>
+				<td><input type="text"></td>
+			  </tr>
+			  <tr>
+				<td colspan="2">
+					<button type="button" class="btn btn-default btn-sm">
+					  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Novo
+					</button>
+				</td>
+				<td></td><td></td>
+			  </tr>
+			</tbody>
+		  </table>
+        <div class="row"><h4>&nbsp;</h4></div>
+		  <h4>Acordo Comercial</h4>
+		  <hr/>
+		  <div class="form-group">
+			<label for="inlineAcordoComercial" class="col-sm-3 control-label">Possui Acordo Comercial?</label>
+			<div class="col-sm-9">
+				<label class="radio-inline">
+				  <input type="radio" name="inlineAcordoComercial" id="inlineAcordoComercial1" value="S"> Sim
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineAcordoComercial" id="inlineAcordoComercial2" value="N"> Não
+				</label>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="selectTipoComissao" class="col-sm-3 control-label">Tipo Comissão</label>
+			<div class="col-sm-9">
+				<select multiple class="form-control" id="selectTipoComissao" >
+					<option>Comissionamento</option>
+					<option>Pró-labore</option>
+				</select>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="inlineCoEstipulante" class="col-sm-3 control-label">Permite Co-Estipulante?</label>
+			<div class="col-sm-9">
+				<label class="radio-inline">
+				  <input type="radio" name="inlineCoEstipulante" id="inlineCoEstipulante1" value="S"> Sim
+				</label>
+				<label class="radio-inline">
+				  <input type="radio" name="inlineCoEstipulante" id="inlineCoEstipulante2" value="N"> Não
+				</label>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="selectTipoComercializacao" class="col-sm-3 control-label">Tipo Comercialização</label>
+			<div class="col-sm-9">
+				<select multiple class="form-control" id="selectTipoComercializacao" >
+					<option>Estipulante</option>
+					<option>Representante de seguro</option>
+					<option>Imobiliária</option>
+					<option>Administrador de bens próprios</option>
+				</select>
+			</div>
+		  </div>
+		  <div class="form-group">
+			<label for="selectFreqFaturamento" class="col-sm-3 control-label">Frequencia Faturamento</label>
+			<div class="col-sm-9">
+				<select class="form-control" id="selectFreqFaturamento" >
+					<option>Mensal</option>
+					<option>Quinzenal</option>
+					<option>Semanal</option>
+				</select>
+			</div>
+		  </div>
+		  <hr/>
+		  <div class="form-group">
+			<label for="selectStatus" class="col-sm-3 control-label">Comentários</label>
+			<div class="col-sm-9">
+				<textarea class="form-control" rows="3" placeholder="Disponível em alteração e manutenção." ></textarea>
+			</div>
+		  </div>
+		  <div class="row col-sm-offset-3 col-sm-9">
+			<hr/>
+			<p><small>Última atualização realizado por: Gisele Ortiz; Matricula: P000000; Data da última atualização: 30/03/2015 14:30:45</small></p>
+		  </div>
+		  <div class="form-group">
+			<div class="col-sm-offset-3 col-sm-9">
+				<button class="btn btn-default">Salvar</button>
+				<button class="btn btn-default">Remover</button>
+				<a type="button" class="btn btn-default" href="../produtocomercialemdesenvolvimento/produtocomercial.html">Voltar</a>
+				<button class="btn btn-default">Avançar</button>
+			</div>
+		  </div>
+		</form>
+	</div>
+    <div class="col-md-3">
+    <div class="row">
+        <h4>&nbsp;</h4>
+    </div>
+    <hr />
+    <ul class="list-group">
+        <li class="list-group-item">
+            <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+            Produto Comercial
+        </li>
+        <li class="list-group-item">
+            <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+            Oferta
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,74 @@
+{
+  "general": {
+    "url": "/general",
+    "templateUrl": "views/general/general/general.html",
+    "controller" : "ProductsCtrl"
+
+  },
+  "general.group": {
+    "url": "/group",
+    "templateUrl": "views/general/general.group.html",
+    "controller" : "ProdGroupCtrl"
+  },
+  "general.discountsdiseases": {
+    "url": "/discountsdiseases",
+    "templateUrl": "views/general/general.discountsdiseases.html",
+    "controller" : "ProductsCtrl"
+  },
+  "general.beneficio": {
+    "url": "/beneficio",
+    "templateUrl": "views/general/general.beneficio.html",
+    "controller" : "ProductsCtrl"
+  },
+  "general.formtype": {
+    "url": "/formtype",
+    "templateUrl": "views/general/general.formtype.html",
+    "controller" : "ProductsCtrl"
+  },
+  "general.ramo": {
+    "url": "/ramo",
+    "templateUrl": "views/general/general.ramo.html",
+    "controller" : "ProductsCtrl"
+  },
+  "general.modalidade": {
+    "url": "/modalidade",
+    "templateUrl": "views/general/general.modalidade.html"
+  },
+  "products": {
+    "url": "/products",
+    "templateUrl": "views/products/products.html"
+  },
+  "products.oferta": {
+    "url": "/oferta",
+    "templateUrl": "views/products/products.oferta.html"
+  },
+  "products.produtocomercial": {
+    "url": "/produtocomercial",
+    "templateUrl": "views/products/products.produtocomercial.html"
+  },  
+  "create": {
+    "url": "/create",
+    "templateUrl": "views/create/create.html"
+  },
+  "create.produtocomercial": {
+    "url": "/produtocomercial",
+    "templateUrl": "views/create/create.produtocomercial.html"
+  },
+  "create.oferta": {
+    "url": "/oferta",
+    "templateUrl": "views/create/create.oferta.html"
+  },
+  "development": {
+    "url": "/development",
+    "templateUrl": "views/development/development.html"
+  },
+  "development.oferta": {
+    "url": "/oferta",
+    "templateUrl": "views/development/development.oferta.html"
+  },
+  "development.produtocomercial": {
+    "url": "/produtocomercial",
+    "templateUrl": "views/development/development.produtocomercial.html"
+  }
+
+}

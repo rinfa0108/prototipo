@@ -1,0 +1,20 @@
+[
+  {
+    "id" : 1,
+    "Empresa": "Porto Seguro",
+    "Descricao": "Patrimonial",
+    "Status": "Ativo"
+  },
+  {
+    "id" : 2,
+    "Empresa": "Porto Seguro",
+    "Descricao": "Responsabilidade Civil",
+    "Status": "Ativo"
+  },
+  {
+    "id" : 3,
+    "Empresa": "Porto Seguro",
+    "Descricao": "Agronegócio",
+    "Status": "Ativo"
+  }
+]

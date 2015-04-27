@@ -1,0 +1,85 @@
+<div class="well" style="overflow-y: scroll; overflow-x: hidden; height: 1000px;">
+    <ul class="nav nav-list">
+        <li  ><label class="tree-toggler nav-header" ><span class="glyphicon glyphicon-minus">&nbsp</span>Porto Seguro</label>
+            <ul class="nav nav-list tree">
+                <li>
+                    <label class="tree-toggler nav-header" ng-click="novo=!novo">
+                        <span class="glyphicon glyphicon-minus">&nbsp</span>
+                        Grupo Comercial
+                    </label>
+                    <label><a ui-sref="general.group">Novo</a></label>
+                    <ul class="nav nav-list tree" data-slide-toggle="novo">
+                        <ul class="nav nav-list tree">
+                            <li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Patrimonial</a></li>
+                        </ul>
+                        <ul class="nav nav-list tree">
+                            <li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Responsabilidade Civil</a></li>
+                        </ul>
+                        <ul class="nav nav-list tree">
+                            <li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Agronegócio</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li><label class="tree-toggler nav-header" ng-click="ramo=!ramo">
+                    <span class="glyphicon glyphicon-minus">&nbsp</span>Ramo </label>
+                    <ul class="nav nav-list tree" data-slide-toggle="ramo">
+                        <ul class="nav nav-list tree">
+                            <li><a  ui-sref="general.ramo" style="padding-top: 0px; padding-bottom: 0px;">Compreensivo Condomínio</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li><label class="tree-toggler nav-header" ng-click="Modalidade=!Modalidade"><span class="glyphicon glyphicon-minus">&nbsp</span>Modalidade </label>
+                    <ul class="nav nav-list tree" data-slide-toggle="Modalidade">
+                        <ul class="nav nav-list tree">
+                            <li><a  ui-sref="general.modalidade" style="padding-top: 0px; padding-bottom: 0px;">Acordos Especiais</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li><label class="tree-toggler nav-header" ng-click="Descontos=!Descontos"><span class="glyphicon glyphicon-minus">&nbsp</span>Descontos e Agravos </label>
+                    <label><a ui-sref="general.discountsdiseases">Novo</a></label>
+                    <ul class="nav nav-list tree"  data-slide-toggle="Descontos">
+                        <ul class="nav nav-list tree">
+                            <li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Agravo Região</a></li>
+                        </ul>
+                        <ul class="nav nav-list tree">
+                            <li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Desconto Comercial</a></li>
+                        </ul>
+                        <ul class="nav nav-list tree">
+                            <li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Desconto Técnico</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li><label class="tree-toggler nav-header" ng-click="Beneficio=!Beneficio">
+                    <span class="glyphicon glyphicon-minus">&nbsp</span>Benefício </label>
+                    <label><a ui-sref="general.beneficio">Novo</a></label>
+                    <ul class="nav nav-list tree" data-slide-toggle="Beneficio">
+                        <ul class="nav nav-list tree">
+                            <li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Estacionamento</a></li>
+                        </ul>
+                        <ul class="nav nav-list tree">
+                            <li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Locadora de Auto</a></li>
+                        </ul>
+                        <ul class="nav nav-list tree">
+                            <li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">PetShop</a></li>
+                        </ul>
+                    </ul>
+                </li>
+                <li><label class="tree-toggler nav-header" ng-click="Tipo=!Tipo">
+                    <span class="glyphicon glyphicon-minus">&nbsp</span>Tipo de Formulário </label>
+                    <label><a ui-sref="general.formtype">Novo</a></label>
+                    <ul class="nav nav-list tree" data-slide-toggle="Tipo">
+                        <ul class="nav nav-list tree">
+                            <li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Apólice</a></li>
+                        </ul>
+                        <ul class="nav nav-list tree">
+                            <li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Certificado</a></li>
+                        </ul>
+                        <ul class="nav nav-list tree">
+                            <li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Orçamento</a></li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

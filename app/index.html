@@ -1,0 +1,68 @@
+<!--
+/*
+* Created by richard.m.infantado on 4/6/2015.
+*/
+-->
+
+<!DOCTYPE html>
+<html class="ng-scope" ng-app="portoApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="vendor/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="vendor/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/ng-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container-fluid" >
+    <div class="row">
+        <div class="col-md-12"></div>
+    </div>
+    <div class="row" >
+        <div ng-include="'views/main-nav.html'"></div>
+    </div>
+
+    <div ui-view="" class="row" ></div>
+
+    <div class="row">
+        <div class="col-md-12"></div>
+    </div>
+</div>
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins e.g Toggle Tree ) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- AngularJS's Framework files and dependencies -->
+<script src="vendor/angular/angular.min.js"></script>
+<script src="vendor/ui-router/release/angular-ui-router.min.js"></script>
+<script src="components/ui-bootstrap-tpls-0.12.1.min.js"></script>
+<script src="components/ng-grid.min.js"></script>
+
+<script src="assets/routing.js"></script>
+<script src="app.js"></script>
+
+<script src="general-categories/products.js"></script>
+
+<script src="general-categories/grupocomercial/grupocomercial.service.js"></script>
+<script src="general-categories/descontoseagravos/descontoseagravos.service.js"></script>
+<script src="general-categories/beneficio/beneficio.service.js"></script>
+<script src="general-categories/grupocomercial/grupocomercial.directive.js"></script>
+
+<!-- Load JS file by feature/domain -->
+<script src="general-categories/grupocomercial/grupocomercial.js"></script>
+<script src="general-categories/descontoseagravos/descontoseagravos.js"></script>
+<script src="general-categories/beneficio/beneficio.js"></script>
+
+
+<script src="directives/toggle.directive.js"></script>
+</body>
+</html>

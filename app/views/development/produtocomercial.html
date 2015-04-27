@@ -1,0 +1,217 @@
+<div class="col-md-3" >
+    <div ng-include="'views/development/produtocomercial-tree.html'"></div>
+</div>
+<div class="col-md-9">
+    <div ui-view>
+        <div class="row">
+            <div class="col-md-9">
+                <div class="row">
+                    <h4>Produto Comercial</h4>
+                </div>
+                <hr/>
+                <div>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="selectEmpresa" class="col-sm-3 control-label">Empresa</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" id="selectEmpresa" >
+                                    <option>Porto Seguro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectGrupo" class="col-sm-3 control-label">Grupo Comercial</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" id="selectGrupo" placeholder="Seleção do Ramo">
+                                    <option>Lista de Valores</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectRamo" class="col-sm-3 control-label">Ramo</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" id="selectRamo" placeholder="Seleção do Ramo">
+                                    <option>Lista de Valores</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectModalidade" class="col-sm-3 control-label">Modalidade</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" id="selectModalidade" placeholder="Seleção da Modalidade">
+                                    <option>Lista de Valores</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDescricao" class="col-sm-3 control-label">Descrição resumida</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputDescricao" placeholder="Texto Livre">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDescricaoLonga" class="col-sm-3 control-label">Descrição completa</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputDescricaoLonga" placeholder="Texto Livre">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDescricaoLonga" class="col-sm-3 control-label">Status</label>
+                            <div class="col-sm-9">
+                                <input disabled type="text" class="form-control" id="inputDescricaoLonga" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDescricaoLonga" class="col-sm-3 control-label">Numero da Versão</label>
+                            <div class="col-sm-9">
+                                <input disabled type="text" class="form-control" id="inputDescricaoLonga" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label">Vigência</label>
+                            <div class="col-sm-9 center-block">
+                                <label for="inputInicio" class="col-sm-3 control-label">Início</label>
+                                <div class="col-sm-9">
+                                    <input type="date" class="form-control" id="inputRestricao" >
+                                </div>
+                                <label for="inputFim" class="col-sm-3 control-label">Fim</label>
+                                <div class="col-sm-9">
+                                    <input type="date" class="form-control" id="inputRestricao" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            </br></br>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectProponente" class="col-sm-3 control-label">Tipo de Proponente</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" id="selectProponente" placeholder="Seleção do Tipo de Proponente">
+                                    <option>Lista de Valores</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="radioPermAverbacao" class="col-sm-3 control-label">Permite Averbação?</label>
+                            <div class="col-sm-9">
+                                <label class="radio-inline">
+                                    <input type="radio" name="radioPermAverbacao" id="radioPermAverbacao1" value="S"> Sim
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="radioPermAverbacao" id="radioPermAverbacao2" value="N"> Não
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="radioLmiUnico" class="col-sm-3 control-label">LMI Único</label>
+                            <div class="col-sm-9">
+                                <label class="radio-inline">
+                                    <input type="radio" name="radioLmiUnico" id="radioLmiUnico1" value="S"> Sim
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="radioLmiUnico" id="radioLmiUnico2" value="N"> Não
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="radioCancTerc" class="col-sm-3 control-label">Cancelamento por parte do cliente / seguradora?</label>
+                            <div class="col-sm-9">
+                                <label class="radio-inline">
+                                    <input type="radio" name="radioCancTerc" id="radioCancTerc1" value="S"> Sim
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="radioCancTerc" id="radioCancTerc2" value="N"> Não
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="radioPermCoSeguro" class="col-sm-3 control-label">Permite co-seguro?</label>
+                            <div class="col-sm-9">
+                                <label class="radio-inline">
+                                    <input type="radio" name="radioPermCoSeguro" id="radioPermCoSeguro1" value="S"> Sim
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="radioPermCoSeguro" id="radioPermCoSeguro2" value="N"> Não
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="radioProrrogVig" class="col-sm-3 control-label">Prorrogação da Vigência?</label>
+                            <div class="col-sm-9">
+                                <label class="radio-inline">
+                                    <input type="radio" name="radioProrrogVig" id="radioProrrogVig1" value="S"> Sim
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="radioProrrogVig" id="radioProrrogVig2" value="N"> Não
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="radioTituloCap" class="col-sm-3 control-label">Titulo de Capitalização?</label>
+                            <div class="col-sm-9">
+                                <label class="radio-inline">
+                                    <input type="radio" name="radioTituloCap" id="radioTituloCap1" value="S"> Sim
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="radioTituloCap" id="radioTituloCap2" value="N"> Não
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectMoeda" class="col-sm-3 control-label">Moeda(s) de Comercialização</label>
+                            <div class="col-sm-9">
+                                <select multiple class="form-control" id="selectMoeda" placeholder="Seleção de Moeda">
+                                    <option>Lista de Valores</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputLimiteMinComissao" class="col-sm-3 control-label">Limite Mín. de Comissão</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputLimiteMinComissao" placeholder="Texto Livre">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputLimiteMaxComissao" class="col-sm-3 control-label">Limite Máx. de Comissão</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputLimiteMaxComissao" placeholder="Texto Livre">
+                            </div>
+                        </div>
+                        <div class="row col-sm-offset-3 col-sm-9">
+                            <hr/>
+                            <p><small>Última atualização realizado por: Gisele Ortiz; Matricula: P000000; Data da última atualização: 30/03/2015 14:30:45</small></p>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button class="btn btn-default">Salvar</button>
+                                <button class="btn btn-default">Remover</button>
+                                <button class="btn btn-default">Voltar</button>
+                                <a type="button" class="btn btn-default" href="../produtocomercialemdesenvolvimento/oferta.html">Avançar</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <h4>&nbsp;</h4>
+                </div>
+                <hr />
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+                        Produto Comercial
+                    </li>
+                    <li class="list-group-item">
+                        <span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>
+                        Oferta
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12">
+    &nbsp;
+</div>

@@ -1,0 +1,35 @@
+[
+  {
+    "empresa": "Porto Seguro",
+    "id": 1,
+    "tipoDescAgra": "Desconto",
+    "tipoAplica": "Comercial",
+    "Descricao": "Desconto Técnico",
+    "percMin": "5%",
+    "percMax": "20%",
+    "Status": "Ativo",
+    "comentario": ""
+  },
+  {
+    "empresa": "Porto Seguro",
+    "id": 2,
+    "tipoDescAgra": "Desconto",
+    "tipoAplica": "Comercial",
+    "Descricao": "Desconto Comercial",
+    "percMin": "5%",
+    "percMax": "20%",
+    "Status": "Ativo",
+    "comentario": ""
+  },
+  {
+    "empresa": "Porto Seguro",
+    "id": 3,
+    "tipoDescAgra": "Agravo",
+    "tipoAplica": "Tarifario",
+    "Descricao": "Agravo Região",
+    "percMin": "5%",
+    "percMax": "20%",
+    "Status": "Ativo",
+    "comentario": ""
+  }
+]

@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="en">
+<head>
+        
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="editor" content="brix.io">
+	
+	<link rel="stylesheet" type="text/css" href="http://angular-ui.github.com/ng-grid/css/ng-grid.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+	<script type="text/javascript" src="http://angular-ui.github.com/ng-grid/lib/ng-grid.debug.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	
+	<title>Cadastro Oferta do Produto Comercial</title>
+				
+	<!-- Bootstrap -->
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css" rel="stylesheet" >
+	
+	<!-- Font Awesome -->
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+	
+	<!-- ng-grid -->
+	<link href="http://angular-ui.github.com/ng-grid/css/ng-grid.css" rel="stylesheet" type="text/css" />
+	<script src="http://angular-ui.github.com/ng-grid/lib/ng-grid.debug.js" type="text/javascript" ></script>
+	
+	<!-- AngularJS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		
+	<!-- User -->
+	<link href="../css/style.css" rel="stylesheet">
+	
+        
+    <script type="text/javascript" src="../js/main.js"></script>
+				 
+					
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<!--[endif]---->
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('label.tree-toggler').click(function () {
+				$(this).parent().children('ul.tree').toggle(300);
+			});
+		});
+	</script>
+                        
+</head>
+<body ng-controller="MyCtrl">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<nav role="navigation" class="navbar navbar-default">
+					<!-- Collection of nav links, forms, and other content for toggling -->
+					<div id="navbarCollapse" class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="../cadastrogerais/inicio.html">Cadastros Gerais</a></li>
+							<li><a href="../produtocomercial/inicio.html">Produto Comercial</a></li>
+							<li><a href="../produtocomercialemdesenvolvimento/produtocomercial.html">Cria Produto Comercial</a></li>
+							<li class="active"><a href="../produtocomercialemdesenvolvimento/inicio.html">Produto Comercial "Em Desenvolvimento"</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="well" style="overflow-y: scroll; overflow-x: hidden; height: 1000px;">
+					<ul class="nav nav-list">
+						<li><label class="tree-toggler nav-header" ><span class="glyphicon glyphicon-minus">&nbsp</span>Porto Seguro</label>
+							<ul class="nav nav-list tree">
+								<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Patrimoniais </label>
+									<ul class="nav nav-list tree">
+										<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Compreensivo Condomínio </label>
+											<ul class="nav nav-list tree">
+												<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Condomínio <a href="../produtocomercialemdesenvolvimento/produtocomercial.html" >Ver</a></label>
+													<ul class="nav nav-list tree">
+														<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Condomínio <a href="../produtocomercialemdesenvolvimento/oferta.html" >Ver</a></label>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Residencial Patrimoniais </label>
+											<ul class="nav nav-list tree">
+												<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Residência Habitual <a href="../produtocomercialemdesenvolvimento/produtocomercial.html">Ver</a></label>
+													<ul class="nav nav-list tree">
+														<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Habitual <a href="../produtocomercialemdesenvolvimento/oferta.html" >Ver</a></label>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+															</ul>
+														</li>
+														<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Apartamento <a href="../produtocomercialemdesenvolvimento/oferta.html" >Ver</a></label>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+															</ul>
+														</li>
+														<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Premium <a href="../produtocomercialemdesenvolvimento/oferta.html" >Ver</a></label>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Acordos Especiais <a href="../produtocomercialemdesenvolvimento/produtocomercial.html">Ver</a></label>
+													<ul class="nav nav-list tree">
+														<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Acordos Especiais <a href="../produtocomercialemdesenvolvimento/oferta.html" >Ver</a></label>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Veraneio <a href="../produtocomercialemdesenvolvimento/produtocomercial.html">Ver</a></label>
+													<ul class="nav nav-list tree">
+														<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Veraneio <a href="../produtocomercialemdesenvolvimento/oferta.html" >Ver</a></label>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+												<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Residencial Simplificado <a href="../produtocomercialemdesenvolvimento/produtocomercial.html">Ver</a></label>
+													<ul class="nav nav-list tree">
+														<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Simplificado <a href="../produtocomercialemdesenvolvimento/oferta.html" >Ver</a></label>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Compreensivo Empresarial </label>
+											<ul class="nav nav-list tree">
+												<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Porto Empresas <a href="../produtocomercialemdesenvolvimento/produtocomercial.html">Ver</a></label>
+													<ul class="nav nav-list tree">
+														<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Porto Empresa <a href="../produtocomercialemdesenvolvimento/oferta.html" >Ver</a></label>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+															</ul>
+														</li>
+														<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Porto Imobiliária Empresa <a href="../produtocomercialemdesenvolvimento/oferta.html" >Ver</a></label>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+															</ul>
+														</li>
+														<li><label class="tree-toggler nav-header"><span class="glyphicon glyphicon-minus">&nbsp</span>Acordos Especiais <a href="../produtocomercialemdesenvolvimento/oferta.html" >Ver</a></label>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+															</ul>
+															<ul class="nav nav-list tree">
+																<li><a href="#" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="row">
+					<div class="col-md-9">
+						<h4>Oferta do Produto</h4>
+						<hr/>
+						<form class="form-horizontal">
+							<div class="form-group">
+							<label for="selectGrupo" class="col-sm-3 control-label">Grupo Comercial</label>
+							<div class="col-sm-9">
+								<select disabled class="form-control" id="selectGrupo" placeholder="Seleção do Ramo">
+									<option>Lista de Valores</option>
+								</select>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="selectRamo" class="col-sm-3 control-label">Ramo</label>
+							<div class="col-sm-9">
+								<select disabled class="form-control" id="selectRamo" placeholder="Seleção do Ramo">
+									<option>Lista de Valores</option>
+								</select>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="selectModalidade" class="col-sm-3 control-label">Modalidade</label>
+							<div class="col-sm-9">
+								<select disabled class="form-control" id="selectModalidade" placeholder="Seleção da Modalidade">
+									<option>Lista de Valores</option>
+								</select>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inputDescricao" class="col-sm-3 control-label">Descrição resumida do Produto Cormercial</label>
+							<div class="col-sm-9">
+								<input disabled type="text" class="form-control" id="inputDescricao" placeholder="Texto Livre">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inputVersao" class="col-sm-3 control-label">Versão do Produto Comercial</label>
+							<div class="col-sm-9">
+								<input disabled type="text" class="form-control" id="inputVersao" placeholder="">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="selectOferta" class="col-sm-3 control-label">Oferta</label>
+							<div class="col-sm-9">
+								<select class="form-control" id="selectOferta" placeholder="Seleção da Modalidade">
+									<option>Habitual - versão 1 - "Concluido"</option>
+                                    <option>Premium - versão 2 - "Em Desenvolvimento"</option>
+								</select>
+								<button class="btn btn-default">Criar Oferta</button>
+								<button class="btn btn-default">Remover Oferta</button>
+								<button class="btn btn-default">Versionar Oferta</button>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inputDescricao" class="col-sm-3 control-label">Descrição resumida</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="inputDescricao" placeholder="Texto Livre">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inputDescricaoLonga" class="col-sm-3 control-label">Descrição completa</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="inputDescricaoLonga" placeholder="Texto Livre">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inputDescricaoLonga" class="col-sm-3 control-label">Status</label>
+							<div class="col-sm-9">
+								<input disabled type="text" class="form-control" id="inputDescricaoLonga" placeholder="">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inputDescricaoLonga" class="col-sm-3 control-label">Numero da Versão</label>
+							<div class="col-sm-9">
+								<input disabled type="text" class="form-control" id="inputDescricaoLonga" placeholder="">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label class="col-sm-3 control-label">Vigência</label>
+							<div class="col-sm-9 center-block">
+								<label for="inputInicio" class="col-sm-3 control-label">Início</label>
+								<div class="col-sm-9">
+									<input type="date" class="form-control" id="inputRestricao" >
+								</div>
+								<label for="inputFim" class="col-sm-3 control-label">Fim</label>
+								<div class="col-sm-9">
+									<input type="date" class="form-control" id="inputRestricao" >
+								</div>
+							</div>
+						  </div>
+						  <div class="row">
+							</br></br>
+						  </div>
+						  <h4>Canal</h4>
+						  <hr/>
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th>Canal</th>
+								<th>Tipo Seguro</th>
+								<th>Calculo</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td>
+									<select class="form-control" >
+										<option>Canal do Cliente</option>
+										<option>Canal do Corretor</option>
+									</select>
+								</td>
+								<td>
+									<select class="form-control" >
+										<option>Orçamento</option>
+										<option>Proposta</option>
+									</select>
+								</td>
+								<td>
+									<select multiple class="form-control" >
+										<option>Anual</option>
+										<option>Plurianual</option>
+									</select>
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<select class="form-control" >
+										<option>Canal do Cliente</option>
+									</select>
+								</td>
+								<td>
+									<select class="form-control" >
+										<option>Orçamento</option>
+										<option>Proposta</option>
+									</select>
+								</td>
+								<td>
+									<select multiple class="form-control" >
+										<option>Anual</option>
+										<option>Plurianual</option>
+									</select>
+								</td>
+							  </tr>
+							  <tr>
+								<td>
+									<button type="button" class="btn btn-default btn-sm">
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Novo
+									</button>
+								</td>
+								<td></td>
+								<td></td>
+							  </tr>
+							</tbody>
+						  </table>
+						  <div class="form-group">
+							<label for="inlineApoliceColetiva" class="col-sm-3 control-label">Permite Apolice Coletiva?</label>
+							<div class="col-sm-9">
+								<label class="radio-inline">
+								  <input disabled type="radio" name="inlineApoliceColetiva" id="inlineApoliceColetiva1" value="S"> Sim
+								</label>
+								<label class="radio-inline">
+								  <input disabled checked type="radio" name="inlineApoliceColetiva" id="inlineApoliceColetiva2" value="N"> Não
+								</label>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="radioObjetoSeg" class="col-sm-3 control-label">Permite mais de um objeto de risco?</label>
+							<div class="col-sm-9">
+								<label class="radio-inline">
+								  <input type="radio" name="radioObjetoSeg" id="radioObjetoSeg1" value="S"> Sim
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="radioObjetoSeg" id="radioObjetoSeg2" value="N"> Não
+								</label>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inlineMultiPagadores" class="col-sm-3 control-label">Mais de um Responsável pelo Pagamento?</label>
+							<div class="col-sm-9">
+								<label class="radio-inline">
+								  <input type="radio" name="inlineMultiPagadores" id="inlineMultiPagadores1" value="S"> Sim
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="inlineMultiPagadores" id="inlineMultiPagadores2" value="N"> Não
+								</label>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="radioPermCosegurado" class="col-sm-3 control-label">Permite co-segurado?</label>
+							<div class="col-sm-9">
+								<label class="radio-inline">
+								  <input type="radio" name="radioPermCosegurado" id="radioPermCoSeguro1" value="S"> Sim
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="radioPermCosegurado" id="radioPermCoSeguro2" value="N"> Não
+								</label>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inputValidadeOrcNovo" class="col-sm-3 control-label">Validade do Orçamento Novo</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="inputValidadeOrcNovo" placeholder="Texto Livre">
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="selectTipoRenovacao" class="col-sm-3 control-label">Tipo Renovação</label>
+							<div class="col-sm-9">
+								<select class="form-control" id="selectTipoRenovacao" >
+									<option>Lista de Valores</option>
+								</select>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inputValidadeOrcRenov" class="col-sm-3 control-label">Validade do Orçamento Renovação</label>
+							<div class="col-sm-9">
+								<input type="text" class="form-control" id="inputValidadeOrcRenov" placeholder="Texto Livre">
+							</div>
+						  </div>
+                    <div class="row"><h4>&nbsp;</h4></div>
+                    <h4>Descontos e Agravos <small><a href="../cadastrogerais/descontosagravos.html"><span class="glyphicon glyphicon-new-window" /></a></small></h4>
+						  <hr/>
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th></th>
+								<th>Descrição</th>
+								<th>Tipo</th>
+								<th>Limite Minimo</th>
+								<th>Limite Máximo</th>
+								<th>Cálculo</th>
+								<th>Desprezado Renovação</th>
+								<th>Imprimir?</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+								<td>
+									<select class="form-control" >
+										<option>Comercial</option>
+									</select>
+								</td>
+								<td>Desconto</td>
+								<td>5%</td>
+								<td>20%</td>
+								<td>Comercial</td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							  </tr>
+							  <tr>
+								<td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+								<td>
+									<select class="form-control" >
+										<option>Agravo Região</option>
+									</select>
+								</td>
+								<td>Agravo</td>
+								<td>5%</td>
+								<td>20%</td>
+								<td>Tarifário</td>
+								<td><input type="checkbox"></td>
+								<td><input type="checkbox"></td>
+							  </tr>
+							  <tr>
+								<td colspan="2">
+									<button type="button" class="btn btn-default btn-sm">
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Novo
+									</button>
+								</td>
+								<td></td><td></td><td></td><td></td><td></td><td></td>
+							  </tr>
+							</tbody>
+						  </table>
+                        <div class="row"><h4>&nbsp;</h4></div>
+						  <h4>Benefícios <small><a href="../cadastrogerais/beneficios.html"><span class="glyphicon glyphicon-new-window" /></a></small></h4>
+						  <hr/>
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th></th>
+								<th>Benefício</th>
+								<th>Limite de uso</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+								<td>
+									<select class="form-control" >
+										<option>Teatro</option>
+									</select>
+								</td>
+								<td><input type="text"></td>
+							  </tr>
+							  <tr>
+								<td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+								<td>
+									<select class="form-control" >
+										<option>Estacionamento</option>
+									</select>
+								</td>
+								<td><input type="text"></td>
+							  </tr>
+							  <tr>
+								<td colspan="2">
+									<button type="button" class="btn btn-default btn-sm">
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Novo
+									</button>
+								</td>
+								<td></td>
+							  </tr>
+							</tbody>
+						  </table>
+                            <div class="row"><h4>&nbsp;</h4></div>
+						  <h4>Formulários <small><a href="../cadastrogerais/tipoformulario.html"><span class="glyphicon glyphicon-new-window" /></a></small></h4>
+						  <hr/>
+						  <table class="table">
+							<thead>
+							  <tr>
+								<th></th>
+								<th>Descrição</th>
+								<th>Funcionalidade</th>
+								<th>Código</th>
+							  </tr>
+							</thead>
+							<tbody>
+							  <tr>
+								<td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+								<td>
+									<select class="form-control" >
+										<option>Orçamento</option>
+									</select>
+								</td>
+								<td>O</td>
+								<td><input type="text"></td>
+							  </tr>
+							  <tr>
+								<td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+								<td>
+									<select class="form-control" >
+										<option>Emissão</option>
+									</select>
+								</td>
+								<td>E</td>
+								<td><input type="text"></td>
+							  </tr>
+							  <tr>
+								<td colspan="2">
+									<button type="button" class="btn btn-default btn-sm">
+									  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Novo
+									</button>
+								</td>
+								<td></td><td></td>
+							  </tr>
+							</tbody>
+						  </table>
+                        <div class="row"><h4>&nbsp;</h4></div>
+						  <h4>Acordo Comercial</h4>
+						  <hr/>
+						  <div class="form-group">
+							<label for="inlineAcordoComercial" class="col-sm-3 control-label">Possui Acordo Comercial?</label>
+							<div class="col-sm-9">
+								<label class="radio-inline">
+								  <input type="radio" name="inlineAcordoComercial" id="inlineAcordoComercial1" value="S"> Sim
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="inlineAcordoComercial" id="inlineAcordoComercial2" value="N"> Não
+								</label>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="selectTipoComissao" class="col-sm-3 control-label">Tipo Comissão</label>
+							<div class="col-sm-9">
+								<select multiple class="form-control" id="selectTipoComissao" >
+									<option>Comissionamento</option>
+									<option>Pró-labore</option>
+								</select>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="inlineCoEstipulante" class="col-sm-3 control-label">Permite Co-Estipulante?</label>
+							<div class="col-sm-9">
+								<label class="radio-inline">
+								  <input type="radio" name="inlineCoEstipulante" id="inlineCoEstipulante1" value="S"> Sim
+								</label>
+								<label class="radio-inline">
+								  <input type="radio" name="inlineCoEstipulante" id="inlineCoEstipulante2" value="N"> Não
+								</label>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="selectTipoComercializacao" class="col-sm-3 control-label">Tipo Comercialização</label>
+							<div class="col-sm-9">
+								<select multiple class="form-control" id="selectTipoComercializacao" >
+									<option>Estipulante</option>
+									<option>Representante de seguro</option>
+									<option>Imobiliária</option>
+									<option>Administrador de bens próprios</option>
+								</select>
+							</div>
+						  </div>
+						  <div class="form-group">
+							<label for="selectFreqFaturamento" class="col-sm-3 control-label">Frequencia Faturamento</label>
+							<div class="col-sm-9">
+								<select class="form-control" id="selectFreqFaturamento" >
+									<option>Mensal</option>
+									<option>Quinzenal</option>
+									<option>Semanal</option>
+								</select>
+							</div>
+						  </div>
+						  <hr/>
+						  <div class="form-group">
+							<label for="selectStatus" class="col-sm-3 control-label">Comentários</label>
+							<div class="col-sm-9">
+								<textarea class="form-control" rows="3" placeholder="Disponível em alteração e manutenção." ></textarea>
+							</div>
+						  </div>
+						  <div class="row col-sm-offset-3 col-sm-9">
+							<hr/>
+							<p><small>Última atualização realizado por: Gisele Ortiz; Matricula: P000000; Data da última atualização: 30/03/2015 14:30:45</small></p>
+						  </div>
+						  <div class="form-group">
+							<div class="col-sm-offset-3 col-sm-9">
+								<button class="btn btn-default">Salvar</button>
+								<button class="btn btn-default">Remover</button>
+								<a type="button" class="btn btn-default" href="../produtocomercialemdesenvolvimento/produtocomercial.html">Voltar</a>
+								<button class="btn btn-default">Avançar</button>
+							</div>
+						  </div>
+						</form>
+					</div>
+                    <div class="col-md-3">
+                    <div class="row">
+				        <h4>&nbsp;</h4>
+				    </div>
+                    <hr />
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+                            Produto Comercial
+                        </li>
+                        <li class="list-group-item">
+                            <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+                            Oferta
+                        </li>
+                    </ul>
+                </div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12"></div>
+		</div>
+	</div>
+</body>
+</html>

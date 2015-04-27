@@ -1,0 +1,112 @@
+
+    <div class="row" ng-controller="ProdGroupCtrl as prodGroupCtrl" >
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>Grupo Comercial</h4>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="selectEmpresa" class="col-sm-3 control-label">Empresa</label>
+                            <div class="col-sm-9">
+                                <select class="form-control" id="selectEmpresa" data-ng-model="prodGroupCtrl.group.groupBusiness">
+                                    <option value="1">Porto Seguro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDescricao" class="col-sm-3 control-label">Descrição resumida</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputDescricao" ng-model="prodGroupCtrl.group.inputDescription" placeholder="Descrição">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDescricaoLonga" class="col-sm-3 control-label">Descrição completa</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="inputDescricaoLonga" ng-model="prodGroupCtrl.group.fullDescription"  placeholder="Descrição">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectRamos" class="col-sm-3 control-label">Ramos Comercializados</label>
+                            <div class="col-sm-9">
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Ramos</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!--
+                                    <tr>
+                                        <td><a><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+                                        <td><select class="form-control" name="selectEmpresa" data-ng-model="prodGroupCtrl.group.ramos.selectEmpresa1" >
+                                            <option value="114">114 - Compreensivo Condomínio</option>
+                                            <option value="115">114 - Residencial Patrimonial</option>
+                                        </select>
+                                        </td>
+
+                                    </tr>
+                                    -->
+                                    <tr ng-repeat="ramos in prodGroupCtrl.group.ramos track by $index">
+
+                                        <td><a ng-click="prodGroupCtrl.delRamos(ramos.id)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></td>
+                                        <td><select class="form-control" name="selectEmpresa" data-ng-model="prodGroupCtrl.group.ramos.selectEmpresa[]" >
+                                            <option value="114">114 - Compreensivo Condomínio</option>
+                                            <option value="115">114 - Residencial Patrimonial</option>
+                                        </select>
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                                <button type="button" class="btn btn-default btn-sm" ng-click="prodGroupCtrl.ramosProcessAdd()">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Novo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectStatus" class="col-sm-3 control-label">Situação</label>
+                            <div class="col-sm-9">
+                                <label class="radio-inline">
+                                    <input type="radio" name="selectStatus" id="selectStatus1" value="S" data-ng-model="prodGroupCtrl.group.status"> Ativo
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="selectStatus" id="selectStatus2" value="N" data-ng-model="prodGroupCtrl.group.status"> Inativo
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="selectStatus" class="col-sm-3 control-label">Comentários</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" rows="3" placeholder="Disponível em alteração e manutenção." data-ng-model="prodGroupCtrl.group.comment"></textarea>
+                            </div>
+                        </div>
+                        <div class="row col-sm-offset-3 col-sm-9">
+                            <hr/>
+                            <p><small>Última atualização realizado por: Gisele Ortiz; Matricula: P000000; Data da última atualização: 30/03/2015 14:30:45</small></p>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-default" ng-click="prodGroupCtrl.processSave()">Salvar</button>
+                                <button type="submit" class="btn btn-default">Remover</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="gridStyle" ng-grid="prodGroupCtrl.gridGrupoComercial"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

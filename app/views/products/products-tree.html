@@ -1,0 +1,193 @@
+<div class="well" style="overflow-y: scroll; overflow-x: hidden; height: 1000px;">
+    <ul class="nav nav-list">
+        <li><label class="tree-toggler nav-header" ng-click="portoSeguro=!portoSeguro" ><span class="glyphicon glyphicon-minus">&nbsp</span>Porto Seguro</label>
+            <ul class="nav nav-list tree" data-slide-toggle="portoSeguro">
+                <li><label class="tree-toggler nav-header" ng-click="equity=!equity"><span class="glyphicon glyphicon-minus">&nbsp</span>Patrimoniais </label>
+                    <ul class="nav nav-list tree" data-slide-toggle="equity">
+                        <li><label class="tree-toggler nav-header" ng-click="compreCondo=!compreCondo"><span class="glyphicon glyphicon-minus">&nbsp</span>Compreensivo Condomínio </label>
+                            <ul class="nav nav-list tree" data-slide-toggle="compreCondo">
+                                <li>
+                                    <label class="tree-toggler nav-header" ng-click="condoProduto=!condoProduto"><span class="glyphicon glyphicon-minus">&nbsp</span>Condomínio 
+                                    </label>
+                                    <label><a ui-sref="products.produtocomercial">Ver</a></label>
+                                    <ul class="nav nav-list tree" data-slide-toggle="condoProduto">
+                                        <li>
+                                            <label class="tree-toggler nav-header" ng-click="condoOffers=!condoOffers"><span class="glyphicon glyphicon-minus">&nbsp</span>Condomínio </label>
+                                            <label><a ui-sref="products.oferta">Ver</a></label>
+                                            <ul class="nav nav-list tree" data-slide-toggle="condoOffers">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="condoOffers">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="condoOffers">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><label class="tree-toggler nav-header" ng-click="resEquity=!resEquity"><span class="glyphicon glyphicon-minus">&nbsp</span>Residencial Patrimoniais </label>
+                            <ul class="nav nav-list tree" data-slide-toggle="resEquity">
+                                <li>
+                                    <label class="tree-toggler nav-header" ng-click="habitualRes=!habitualRes"><span class="glyphicon glyphicon-minus">&nbsp</span>Residência Habitual </label>
+                                    <label><a ui-sref="products.produtocomercial">Ver</a></label>
+                                    <ul class="nav nav-list tree" data-slide-toggle="habitualRes">
+                                        <li>
+                                            <label class="tree-toggler nav-header" ng-click="habitual=!habitual"><span class="glyphicon glyphicon-minus">&nbsp</span>Habitual </label>
+                                            <label><a ui-sref="products.oferta">Ver</a></label>
+                                            <ul class="nav nav-list tree" data-slide-toggle="habitual">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="habitual">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="habitual">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <label class="tree-toggler nav-header" ng-click="apartment=!apartment"><span class="glyphicon glyphicon-minus">&nbsp</span>Apartamento </label>
+                                            <label><a ui-sref="products.oferta" >Ver</a></label>
+                                            <ul class="nav nav-list tree" data-slide-toggle="apartment">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="apartment">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="apartment">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <label class="tree-toggler nav-header" ng-click="premium=!premium"><span class="glyphicon glyphicon-minus">&nbsp</span>Premium </label>
+                                            <label><a ui-sref="products.oferta" >Ver</a></label>
+                                            <ul class="nav nav-list tree" data-slide-toggle="premium">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="premium">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="premium">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label class="tree-toggler nav-header" ng-click="specAgreementCommercial=!specAgreementCommercial"><span class="glyphicon glyphicon-minus">&nbsp</span>Acordos Especiais </label>
+                                    <label><a ui-sref="products.produtocomercial">Ver</a></label>
+                                    <ul class="nav nav-list tree" data-slide-toggle="specAgreementCommercial">
+                                        <li>
+                                            <label class="tree-toggler nav-header" ng-click="specAgreementOffer=!specAgreementOffer"><span class="glyphicon glyphicon-minus">&nbsp</span>Acordos Especiais </label>
+                                            <label><a ui-sref="products.oferta" >Ver</a></label>
+                                            <ul class="nav nav-list tree" data-slide-toggle="specAgreementOffer">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="specAgreementOffer">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="specAgreementOffer">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label class="tree-toggler nav-header" ng-click="residentialCommercial=!residentialCommercial"><span class="glyphicon glyphicon-minus">&nbsp</span>Veraneio 
+                                    </label>
+                                    <label><a ui-sref="products.produtocomercial">Ver</a></label>
+                                    <ul class="nav nav-list tree" data-slide-toggle="residentialCommercial">
+                                        <li><label class="tree-toggler nav-header" ng-click="residentialOffer=!residentialOffer"><span class="glyphicon glyphicon-minus">&nbsp</span>Veraneio 
+                                        </label>
+                                        <label><a ui-sref="products.oferta" >Ver</a></label>
+                                            <ul class="nav nav-list tree" data-slide-toggle="residentialOffer">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="residentialOffer">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="residentialOffer">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <label class="tree-toggler nav-header" ng-click="resSimplified=!resSimplified"><span class="glyphicon glyphicon-minus">&nbsp</span>Residencial Simplificado </label>
+                                    <label><a ui-sref="products.produtocomercial">Ver</a></label>
+                                    <ul class="nav nav-list tree" data-slide-toggle="resSimplified">
+                                        <li>
+                                            <label class="tree-toggler nav-header" ng-click="simplified=!simplified"><span class="glyphicon glyphicon-minus">&nbsp</span>Simplificado </label>
+                                            <label><a ui-sref="products.oferta" >Ver</a></label>
+                                            <ul class="nav nav-list tree" data-slide-toggle="simplified">
+                                                <li><a ui-sref="products.oferta"ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="simplified">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="simplified">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><label class="tree-toggler nav-header" ng-click="compreBusiness=!compreBusiness"><span class="glyphicon glyphicon-minus">&nbsp</span>Compreensivo Empresarial </label>
+                            <ul class="nav nav-list tree" data-slide-toggle="compreBusiness">
+                                <li>
+                                    <label class="tree-toggler nav-header" ng-click="portoBuss=!portoBuss"><span class="glyphicon glyphicon-minus">&nbsp</span>Porto Empresas 
+                                    </label>
+                                    <label><a ui-sref="products.produtocomercial">Ver</a></label>
+                                    <ul class="nav nav-list tree" data-slide-toggle="portoBuss">
+                                        <li>
+                                            <label class="tree-toggler nav-header" ng-click="portoComp=!portoComp"><span class="glyphicon glyphicon-minus">&nbsp</span>Porto Empresa </label>
+                                            <label><a ui-sref="products.oferta" >Ver</a></label>
+                                            <ul class="nav nav-list tree" data-slide-toggle="portoComp">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="portoComp">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="portoComp">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <label class="tree-toggler nav-header" ng-click="realEstComp=!realEstComp"><span class="glyphicon glyphicon-minus">&nbsp</span>Porto Imobiliária Empresa </label>
+                                            <label><a ui-sref="products.oferta" >Ver</a></label>
+                                            <ul class="nav nav-list tree" data-slide-toggle="realEstComp">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="realEstComp">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="realEstComp">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <label class="tree-toggler nav-header" ng-click="bussAgreements=!bussAgreements"><span class="glyphicon glyphicon-minus">&nbsp</span>Acordos Especiais </label>
+                                            <label><a ui-sref="products.oferta">Ver</a></label>
+                                            <ul class="nav nav-list tree" data-slide-toggle="bussAgreements">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Objeto do Risco</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="bussAgreements">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Coberturas</a></li>
+                                            </ul>
+                                            <ul class="nav nav-list tree" data-slide-toggle="bussAgreements">
+                                                <li><a ui-sref="products.oferta" style="padding-top: 0px; padding-bottom: 0px;">Claúsulas</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
